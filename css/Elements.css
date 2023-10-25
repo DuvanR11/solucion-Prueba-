@@ -1,0 +1,35 @@
+.form-control {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 220px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-control select {
+    text-transform: uppercase;
+    width: 220px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select, input::placeholder {
+    font-size: 14px; 
+    color: #aaa;
+}
+
+
+.form-control select:focus {
+    outline: none; 
+    border-color: #66afe9;
+}

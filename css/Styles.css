@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: #FEC200;
+    --violet: #644BBF;
+    --title-text: #F0B906;
+    --text-blue: #4a54ad;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+}
+
+::-webkit-scrollbar {
+    width: 8px; /
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0c0; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #919191d3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    background-image: url('../images/fondo.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+
+.title {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--title-text);
+    font-size: 40px;
+    font-family: 'Lato light', sans-serif;
+    font-weight: bold; 
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--title-text);
+    font-size: 28px;
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: bold; 
+}
+
+.body1 {
+    text-align: center;
+    color: var(--text-blue);
+    font-size: 16px;
+    font-family: 'Lato light', sans-serif;
+    font-weight: bold; 
+
+}
+
+.body2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: bold; 
+    color: var(--text-blue);
+}
+
+.body3 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: bold; 
+    color: var(--text-blue);
+}
+
+.label {
+    text-align: center;
+    color: var(--title-text);
+    font-size: 16px;
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: bold; 
+}
+
+
+.bold {
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: bold; 
+    font-size: 40px;
+}
+
+.bold-blue {
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: bold; 
+    font-size: 30px;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 0 80px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-information {
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Lato Light', sans-serif;
+    font-weight: bold; 
+    color: var(--text-blue);
+    padding-top: 10px;
+}
+
+footer {
+    padding: 40px 0;
+    background: var(--orange);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    gap: 12px;
+}
+
+.legacy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    color: white;
+}
+
+
+button {
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--violet);
+    padding: 12px;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        background-image: url('../images/fondo-mobile.jpg');
+        background-size: cover;
+        min-height: 65vh;
+    }
+
+    .section {
+        padding: 0;
+        height: 65vh;
+    }
+
+    .bold-blue {
+        display: block;
+    }
+
+    .legacy {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .form {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
+
+.terminos-condiciones .icono {
+    width: 15px; 
+    height: 15px;
+    margin-left: 10px;
+}
+
+.terminos-condiciones p {
+    display: flex; 
+    align-items: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.border {
+    border: 1px solid #ccc;
+}
